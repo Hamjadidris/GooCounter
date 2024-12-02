@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefae0;
+}
+
+.main-container {
+    max-width: 480px;
+    height: 100dvh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.counter-container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter svg {
+    height: 60%;
+    width: 60%;
+    filter: url("#gooFilter");
+}
+
+.counter svg path {
+    display: none;
+}
+
+.circles-group circle {
+    fill: #283618;
+}
+
+.numbers-container {
+    width: 100%;
+    height: 25%;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.4rem;
+}
+
+.number-btn {
+    height: fit-content;
+    transition: font-size .5s ease;
+    color: #283618;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.active-btn {
+    transition: font-size font-weight .5s ease;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
